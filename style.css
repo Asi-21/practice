@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+body{
+    margin: 0px;
+}
+.container{
+    display: flex;
+    background-color: hsl(212, 45%, 89%);
+    height: 70vh;
+    padding: 30px;
+    margin: 100px 40px 100px 40px;
+    justify-content: center;
+    align-items: center;
+    font-family: outfit;
+
+}
+.card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    padding: 10px;
+    width: auto; /* Adjust the card's width as needed */
+    max-width: 400px; /* Set a maximum width for the card */
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: auto; /* Allow the card's height to adjust based on content */
+  }
+  
+  img {
+    max-width: 250px; /* Ensure the image fits within the card */
+    height: 250px; /* Allow the image's height to adjust based on width */
+    border-radius: 10px;
+  }
+  
+  .text {
+    width: 250px;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  p {
+    font-size: 15px;
+    color: hsl(220, 15%, 55%);
+  }
+  
+
+  @media (max-width: 375px) {
+    .container{
+        height: 100vh;
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+    .card{
+        padding: 8px;
+    }
+    img {
+        max-width: 200px; /* Adjust the image size for mobile */
+        height: 200px;
+        margin-bottom: 0px;
+    }
+    
+    .text {
+        width: 200px; 
+        padding: 2px;
+        /* Make the text width 100% for better mobile responsiveness */
+    }
+}
